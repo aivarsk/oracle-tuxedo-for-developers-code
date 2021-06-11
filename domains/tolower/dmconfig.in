@@ -2,7 +2,7 @@
 "LOWER"  GWGRP=DMGROUP
         TYPE=TDOMAIN
         ACCESSPOINTID="LOWER"
-        DMTLOGDEV="/home/oracle/tolower/DMTLOG"
+        DMTLOGDEV="@CURDIR@/dmtlog"
         DMTLOGNAME="DMTLOG"
         CONNECTION_POLICY=ON_STARTUP
         MAXRETRY=MAXLONG

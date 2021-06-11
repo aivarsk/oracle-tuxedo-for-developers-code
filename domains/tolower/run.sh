@@ -7,6 +7,8 @@ cat ubbconfig.in \
 | sed s:@TUXDIR@:$TUXDIR:g \
 | sed s:@UNAME@:`uname -n`:g \
 | sed s:@CURDIR@:`pwd`:g > ubbconfig
+cat dmconfig.in \
+| sed s:@CURDIR@:`pwd`:g > dmconfig
 
 tmloadcf -y ubbconfig
 dmloadcf -y dmconfig
